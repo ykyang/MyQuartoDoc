@@ -12,6 +12,7 @@ website:
   sidebar:
     style: docked
     contents:
+      - figure.qmd
       - table.qmd
 format:
   html:
