@@ -1,3 +1,9 @@
 ---
 title: Figure
 ---
+
+## Include figure
+
+![Julia Logo](https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg){#fig-julia_logo width=20%}
+
+[Go to Julia Logo]@fig-julia_logo
