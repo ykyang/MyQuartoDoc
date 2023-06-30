@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Table",
+    "section": "",
+    "text": "Table without caption, reference or any configuration\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
+  },
+  {
+    "objectID": "table.html#simple-table",
+    "href": "table.html#simple-table",
+    "title": "Table",
+    "section": "",
+    "text": "Table without caption, reference or any configuration\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
+  },
+  {
+    "objectID": "table.html#size-and-position",
+    "href": "table.html#size-and-position",
+    "title": "Table",
+    "section": "Size and position",
+    "text": "Size and position\n\nUse CSS grid to adjust the width and position the table.\nThe tbl-colwidths option adds up to 12.\n\nUse : to align.\n\n\n\n\n\n\n\n\nTable 1: Well production\n\n\n\n\n\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
+  },
+  {
+    "objectID": "table.html#cross-reference",
+    "href": "table.html#cross-reference",
+    "title": "Table",
+    "section": "Cross reference",
+    "text": "Cross reference\nReference to a table well production or Table 1"
+  },
+  {
+    "objectID": "figure.html",
+    "href": "figure.html",
+    "title": "Figure",
+    "section": "",
+    "text": "Figure 1: Julia Logo\n\n\n[Go to Julia Logo]Figure 1"
+  },
+  {
+    "objectID": "figure.html#include-figure",
+    "href": "figure.html#include-figure",
+    "title": "Figure",
+    "section": "",
+    "text": "Figure 1: Julia Logo\n\n\n[Go to Julia Logo]Figure 1"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MyQuartoDoc",
+    "section": "",
+    "text": "This is a Quarto website to collect commonly used features to write technical report."
+  }
+]
