@@ -4,11 +4,15 @@ project:
 website:
   title: "MyQuartoDoc"
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-
+  sidebar:
+    style: docked
+    contents:
+      - table.qmd
 format:
   html:
     theme: cosmo
