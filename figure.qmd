@@ -4,6 +4,25 @@ title: Figure
 
 ## Include figure
 
-![Julia Logo](https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg){#fig-julia_logo width=20%}
+Image from internet
 
-[Go to Julia Logo]@fig-julia_logo
+![Julia Logo](https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg){#fig-xxxjulia_logo_http width=20%}
+
+![An Elephant](julia_logo.svg){#fig-elephant}
+
+This is illustrated well by @fig-elephant.
+
+
+Image from local
+
+![Julia Logo Local](julia_logo.svg){#fig-julia_logo width=20%}
+
+
+
+
+This section is purposely placed at the end, in order to see the effect of 
+cross reference to figures.
+
+[Go to Julia Logo](#fig-julia_logo_http) or 
+
+[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo
