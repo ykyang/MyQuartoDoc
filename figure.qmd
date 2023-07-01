@@ -2,27 +2,86 @@
 title: Figure
 ---
 
-## Include figure
+## Figure basic
 
-Image from internet
+Include figure with this syntax
+```markdown
+![caption](location){label configuration}
+```
+For example
+```markdown
+![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}
+```
+![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}
 
-![Julia Logo](https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg){#fig-xxxjulia_logo_http width=20%}
-
-![An Elephant](julia_logo.svg){#fig-elephant}
-
-This is illustrated well by @fig-elephant.
-
-
-Image from local
-
-![Julia Logo Local](julia_logo.svg){#fig-julia_logo width=20%}
-
+Figure label is the unique identifier for figure, and must starts with `fig-`.
 
 
+Include a video
 
+```markdown
+::: {#fig-elephant}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNggmeilXDQ"></iframe>
+</p>
+Elephant
+:::
+```
+
+::: {#fig-elephant}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNggmeilXDQ"></iframe>
+</p>
+Elephant
+:::
+
+## Multiple figures
+
+```markdown
+::: {#fig-julia_logo_2x2 layout-ncol=2}
+
+![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}
+
+![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}
+
+![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}
+
+![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}
+
+Figures in a grid
+:::
+```
+
+::: {#fig-julia_logo_2x2 layout-ncol=2 width=500px}
+
+![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}
+
+![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}
+
+![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}
+
+![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}
+
+Figures in a grid
+:::
+
+
+
+## Configuration
+ 
+```{#lst-x .yaml lst-cap="Move figure caption to the top in `_quarto.yml`"}
+format:
+  html:
+    fig-cap-location: top
+```
+
+
+## Cross reference
 This section is purposely placed at the end, in order to see the effect of 
 cross reference to figures.
 
-[Go to Julia Logo](#fig-julia_logo_http) or 
+```markdown
+[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local
+```
 
-[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo
+[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local

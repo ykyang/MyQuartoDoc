@@ -1,0 +1,20 @@
+---
+title: CSS
+---
+## Quarto website
+Copy
+
+* [style.css](https://github.com/quarto-dev/quarto-web/blob/main/styles.css){target="_blank"}
+* [theme.scss](https://github.com/quarto-dev/quarto-web/blob/main/theme.scss){target="_blank"}
+
+from [Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target="_blank"}
+to project directory, and add the following to `_quarto.yml`.
+
+```yaml
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+    css: styles.css
+```
+
