@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.163">
+<meta name="generator" content="quarto-1.4.176">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -104,9 +138,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./figure.html">Figure</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./figure.html">Figure</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
@@ -118,8 +152,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./css.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CSS</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./figure.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Figure</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./link.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross reference</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -138,7 +184,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#include-figure" id="toc-include-figure" class="nav-link active" data-scroll-target="#include-figure">Include figure</a></li>
+  <li><a href="#figure-basic" id="toc-figure-basic" class="nav-link active" data-scroll-target="#figure-basic">Figure basic</a></li>
+  <li><a href="#multiple-figures" id="toc-multiple-figures" class="nav-link" data-scroll-target="#multiple-figures">Multiple figures</a></li>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#cross-reference" id="toc-cross-reference" class="nav-link" data-scroll-target="#cross-reference">Cross reference</a></li>
   </ul>
 </nav>
     </div>
@@ -162,15 +211,106 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="include-figure" class="level2">
-<h2 class="anchored" data-anchor-id="include-figure">Include figure</h2>
-<div id="fig-julia_logo" class="quarto-figure quarto-figure-center anchored">
+<section id="figure-basic" class="level2">
+<h2 class="anchored" data-anchor-id="figure-basic">Figure basic</h2>
+<p>Include figure with this syntax</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![caption](location)</span>{label configuration}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For example</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia Logo from local file](julia_logo.svg)</span>{#fig-julia_logo_local width=20%}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-julia_logo_local" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" class="img-fluid figure-img" style="width:20.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Julia Logo</figcaption>
+<p><img src="julia_logo.svg" class="img-fluid figure-img" style="width:20.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Julia Logo from local file</figcaption>
 </figure>
 </div>
-<p>[Go to Julia Logo]<a href="#fig-julia_logo" class="quarto-xref">Figure&nbsp;1</a></p>
+<p>Figure label is the unique identifier for figure, and must starts with <code>fig-</code>.</p>
+<p>Include a video</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {#fig-elephant}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;iframe</span> <span class="er">width</span><span class="ot">=</span><span class="st">"560"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"315"</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://www.youtube.com/embed/SNggmeilXDQ"</span><span class="kw">&gt;&lt;/iframe&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Elephant</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephant" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNggmeilXDQ">
+</iframe>
+</p>
+<figcaption class="figure-caption">Figure&nbsp;2: Elephant</figcaption>
+</figure>
+</div>
+</section>
+<section id="multiple-figures" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-figures">Multiple figures</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: {#fig-julia_logo_2x2 layout-ncol=2}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia-(1,1)](julia_logo.svg)</span>{#fig-julia_logo_11 width=200px}</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia-(1,2)](julia_logo.svg)</span>{#fig-julia_logo_12 width=300px}</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia-(2,1)](julia_logo.svg)</span>{#fig-julia_logo_21 width=300px}</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia-(2,2)](julia_logo.svg)</span>{#fig-julia_logo_22 width=200px}</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>Figures in a grid</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-julia_logo_2x2" class="quarto-layout-panel" width="500px">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 40.0%;justify-content: center;">
+<div id="fig-julia_logo_11" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img" data-ref-parent="fig-julia_logo_2x2" width="200"></p>
+<figcaption class="figure-caption">(a) Julia-(1,1)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 60.0%;justify-content: center;">
+<div id="fig-julia_logo_12" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img" data-ref-parent="fig-julia_logo_2x2" width="300"></p>
+<figcaption class="figure-caption">(b) Julia-(1,2)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 60.0%;justify-content: center;">
+<div id="fig-julia_logo_21" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img" data-ref-parent="fig-julia_logo_2x2" width="300"></p>
+<figcaption class="figure-caption">(c) Julia-(2,1)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 40.0%;justify-content: center;">
+<div id="fig-julia_logo_22" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img" data-ref-parent="fig-julia_logo_2x2" width="200"></p>
+<figcaption class="figure-caption">(d) Julia-(2,2)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Figures in a grid</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="configuration" class="level2">
+<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
+<div id="lst-x" class="listing">
+<p>Listing&nbsp;1: Move figure caption to the top in <code>_quarto.yml</code></p>
+<div class="sourceCode" id="lst-x" data-lst-cap="Move figure caption to the top in `_quarto.yml`"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="lst-x-1"><a href="#lst-x-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="lst-x-2"><a href="#lst-x-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="lst-x-3"><a href="#lst-x-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">fig-cap-location</span><span class="kw">:</span><span class="at"> top</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="cross-reference" class="level2">
+<h2 class="anchored" data-anchor-id="cross-reference">Cross reference</h2>
+<p>This section is purposely placed at the end, in order to see the effect of cross reference to figures.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Go to Julia Logo</span><span class="co">](#fig-julia_logo_local)</span> or @fig-julia_logo_local</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="#fig-julia_logo_local">Go to Julia Logo</a> or <a href="#fig-julia_logo_local" class="quarto-xref">Figure&nbsp;1</a></p>
 
 
 </section>
@@ -470,6 +610,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/ykyang\.github\.io\/MyQuartoDoc\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

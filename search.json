@@ -28,18 +28,25 @@
     "text": "Cross reference\nReference to a table well production or Table 1"
   },
   {
-    "objectID": "figure.html",
-    "href": "figure.html",
-    "title": "Figure",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MyQuartoDoc",
     "section": "",
-    "text": "Figure 1: Julia Logo\n\n\n[Go to Julia Logo]Figure 1"
+    "text": "This is a Quarto website to collect commonly used features to write technical report."
   },
   {
-    "objectID": "figure.html#include-figure",
-    "href": "figure.html#include-figure",
-    "title": "Figure",
+    "objectID": "css.html",
+    "href": "css.html",
+    "title": "CSS",
     "section": "",
-    "text": "Figure 1: Julia Logo\n\n\n[Go to Julia Logo]Figure 1"
+    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
+  },
+  {
+    "objectID": "css.html#quarto-website",
+    "href": "css.html#quarto-website",
+    "title": "CSS",
+    "section": "",
+    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
   },
   {
     "objectID": "about.html",
@@ -49,10 +56,59 @@
     "text": "About this site"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "MyQuartoDoc",
+    "objectID": "figure.html",
+    "href": "figure.html",
+    "title": "Figure",
     "section": "",
-    "text": "This is a Quarto website to collect commonly used features to write technical report."
+    "text": "Include figure with this syntax\n![caption](location){label configuration}\nFor example\n![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}\n\n\n\nFigure 1: Julia Logo from local file\n\n\nFigure label is the unique identifier for figure, and must starts with fig-.\nInclude a video\n::: {#fig-elephant}\n&lt;p align=\"center\"&gt;\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SNggmeilXDQ\"&gt;&lt;/iframe&gt;\n&lt;/p&gt;\nElephant\n:::\n\n\n\n\n\n\nFigure 2: Elephant"
+  },
+  {
+    "objectID": "figure.html#figure-basic",
+    "href": "figure.html#figure-basic",
+    "title": "Figure",
+    "section": "",
+    "text": "Include figure with this syntax\n![caption](location){label configuration}\nFor example\n![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}\n\n\n\nFigure 1: Julia Logo from local file\n\n\nFigure label is the unique identifier for figure, and must starts with fig-.\nInclude a video\n::: {#fig-elephant}\n&lt;p align=\"center\"&gt;\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SNggmeilXDQ\"&gt;&lt;/iframe&gt;\n&lt;/p&gt;\nElephant\n:::\n\n\n\n\n\n\nFigure 2: Elephant"
+  },
+  {
+    "objectID": "figure.html#multiple-figures",
+    "href": "figure.html#multiple-figures",
+    "title": "Figure",
+    "section": "Multiple figures",
+    "text": "Multiple figures\n::: {#fig-julia_logo_2x2 layout-ncol=2}\n\n![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}\n\n![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}\n\n![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}\n\n![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}\n\nFigures in a grid\n:::\n\n\n\n\n\n\n\n(a) Julia-(1,1)\n\n\n\n\n\n\n\n(b) Julia-(1,2)\n\n\n\n\n\n\n\n\n\n(c) Julia-(2,1)\n\n\n\n\n\n\n\n(d) Julia-(2,2)\n\n\n\n\nFigure 3: Figures in a grid"
+  },
+  {
+    "objectID": "figure.html#configuration",
+    "href": "figure.html#configuration",
+    "title": "Figure",
+    "section": "Configuration",
+    "text": "Configuration\n\nListing 1: Move figure caption to the top in _quarto.yml\nformat:\n  html:\n    fig-cap-location: top"
+  },
+  {
+    "objectID": "figure.html#cross-reference",
+    "href": "figure.html#cross-reference",
+    "title": "Figure",
+    "section": "Cross reference",
+    "text": "Cross reference\nThis section is purposely placed at the end, in order to see the effect of cross reference to figures.\n[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local\nGo to Julia Logo or Figure 1"
+  },
+  {
+    "objectID": "link.html",
+    "href": "link.html",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+  },
+  {
+    "objectID": "link.html#anchor",
+    "href": "link.html#anchor",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+  },
+  {
+    "objectID": "link.html#link",
+    "href": "link.html#link",
+    "title": "Cross reference",
+    "section": "Link",
+    "text": "Link\nOpen link in a new browser tab\n[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto\n\nSee Anchor-1\n\nCreate a link to another page by add the name of the qmd file of the target\n[Go to Julia Logo](figure.qmd#fig-julia_logo_local)\nGo to Julia Logo\nNotice this syntax does not work for cross page link\n@fig-julia_logo_local"
   }
 ]
