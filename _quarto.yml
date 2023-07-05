@@ -12,10 +12,12 @@ website:
   sidebar:
     style: docked
     contents:
+      - code_block.qmd
       - css.qmd
       - cross_reference.qmd
       - figure.qmd
       - table.qmd
+      - website.qmd
 format:
   html:
     theme:
@@ -23,7 +25,9 @@ format:
     css: styles.css
     toc: true
     link-external-icon: true
-#    link-external-newwindow: true
+    code-block-bg: true
+    code-block-border-left: false
+    highlight-style: pygments
 
 
 

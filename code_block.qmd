@@ -1,0 +1,53 @@
+---
+title: Code Block
+---
+
+## Code block basic
+
+Include code block with this syntax
+````markdown
+``` {#lst-your_unique_label .language lst-cap="Your caption"}
+Your code here
+```
+````
+Label must start with `#lst-`.
+
+Javascript example
+``` {#lst-js_rest .javascript lst-cap="Menu items with rest and spread"}
+function MenuItem({ label, href, ...rest }) {
+  return (
+    <li className="menu-item">
+      <a className="menu-link" href={href} {...rest}>
+        {label}
+      </a>
+    </li>
+  );
+}
+```
+
+Use `default` if the language is not supported
+```default
+Not supported language
+Not supported language
+Not supported language
+```
+
+
+Get a full list of supported languages
+```sh
+quarto pandoc --list-highlight-languages
+```
+
+Example configuration
+```yaml
+format:
+  html:
+    # https://quarto.org/docs/output-formats/html-code.html#code-filename
+    code-block-bg: true
+    highlight-style: pygments
+    code-block-border-left: false
+    highlight-style: pygments
+```
+
+
+

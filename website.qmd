@@ -1,0 +1,21 @@
+---
+title: Website
+---
+
+Creat a new website project
+```sh
+quarto create-project your-web-site-dir --type website
+```
+Preview the website with
+```sh
+cd your-web-site-dir
+quarto preview
+```
+The preview web server is slow.   Consider using Node.js
+```sh
+npx http-server -p 3000 -o _site -a 127.0.0.1
+```
+
+
+
+See [Quarto](https://quarto.org/docs/websites/) for more details.
