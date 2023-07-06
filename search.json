@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "table.html",
-    "href": "table.html",
-    "title": "Table",
+    "objectID": "website.html",
+    "href": "website.html",
+    "title": "Website",
     "section": "",
-    "text": "Table without caption, reference or any configuration\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
-  },
-  {
-    "objectID": "table.html#simple-table",
-    "href": "table.html#simple-table",
-    "title": "Table",
-    "section": "",
-    "text": "Table without caption, reference or any configuration\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
-  },
-  {
-    "objectID": "table.html#size-and-position",
-    "href": "table.html#size-and-position",
-    "title": "Table",
-    "section": "Size and position",
-    "text": "Size and position\n\nUse CSS grid to adjust the width and position the table.\nThe tbl-colwidths option adds up to 12.\n\nUse : to align.\n\n\n\n\n\n\n\n\nTable 1: Well production\n\n\n\n\n\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
-  },
-  {
-    "objectID": "table.html#cross-reference",
-    "href": "table.html#cross-reference",
-    "title": "Table",
-    "section": "Cross reference",
-    "text": "Cross reference\nReference to a table well production or Table 1"
+    "text": "Creat a new website project\nquarto create-project your-web-site-dir --type website\nAdd _site/ to .gitignore if necessary.\nPreview the website with\ncd your-web-site-dir\nquarto preview\nThe preview web server is slow. Consider using Node.js\nnpx http-server -p 3000 -o _site -a 127.0.0.1\nPublish to GitHub Pages, see GitHut Pages for details.\nCreate gh-pages branch (only necessary the first time)\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\nCheck out the publishing branch, and\nquarto publish gh-pages\nSee Quarto for more details."
   },
   {
     "objectID": "index.html",
@@ -49,11 +28,46 @@
     "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
   },
   {
+    "objectID": "code_block.html",
+    "href": "code_block.html",
+    "title": "Code Block",
+    "section": "",
+    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
+  },
+  {
+    "objectID": "code_block.html#code-block-basic",
+    "href": "code_block.html#code-block-basic",
+    "title": "Code Block",
+    "section": "",
+    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "cross_reference.html",
+    "href": "cross_reference.html",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+  },
+  {
+    "objectID": "cross_reference.html#anchor",
+    "href": "cross_reference.html#anchor",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+  },
+  {
+    "objectID": "cross_reference.html#link",
+    "href": "cross_reference.html#link",
+    "title": "Cross reference",
+    "section": "Link",
+    "text": "Link\nOpen link in a new browser tab\n[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto\n\nSee Anchor-1\n\nCreate a link to another page by add the name of the qmd file of the target\n[Go to Julia Logo](figure.qmd#fig-julia_logo_local)\nGo to Julia Logo\nNotice this syntax does not work for cross page link\n@fig-julia_logo_local"
   },
   {
     "objectID": "figure.html",
@@ -74,7 +88,7 @@
     "href": "figure.html#multiple-figures",
     "title": "Figure",
     "section": "Multiple figures",
-    "text": "Multiple figures\n::: {#fig-julia_logo_2x2 layout-ncol=2}\n\n![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}\n\n![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}\n\n![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}\n\n![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}\n\nFigures in a grid\n:::\n\n\n\n\n\n\n\n(a) Julia-(1,1)\n\n\n\n\n\n\n\n(b) Julia-(1,2)\n\n\n\n\n\n\n\n\n\n(c) Julia-(2,1)\n\n\n\n\n\n\n\n(d) Julia-(2,2)\n\n\n\n\nFigure 3: Figures in a grid"
+    "text": "Multiple figures\n::: {#fig-julia_logo_2x2 layout-ncol=2}\n\n![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}\n\n![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}\n\n![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}\n\n![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}\n\nFigures in a grid\n:::\n\n\n\n\n\n\n\n(a) Julia-(1,1)\n\n\n\n\n\n\n\n(b) Julia-(1,2)\n\n\n\n\n\n\n\n\n\n(c) Julia-(2,1)\n\n\n\n\n\n\n\n(d) Julia-(2,2)\n\n\n\n\nFigure 3: Figures in a grid\n\n\nPut a figure in the margin area\n\n\n\n\n\nFigure 4: Julia logo\n\n\n:::{.column-margin}\n![Julia logo](julia_logo.svg){#fig-x}\n:::"
   },
   {
     "objectID": "figure.html#configuration",
@@ -91,24 +105,31 @@
     "text": "Cross reference\nThis section is purposely placed at the end, in order to see the effect of cross reference to figures.\n[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local\nGo to Julia Logo or Figure 1"
   },
   {
-    "objectID": "link.html",
-    "href": "link.html",
-    "title": "Cross reference",
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "Table",
     "section": "",
-    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-."
   },
   {
-    "objectID": "link.html#anchor",
-    "href": "link.html#anchor",
-    "title": "Cross reference",
+    "objectID": "table.html#table-basic",
+    "href": "table.html#table-basic",
+    "title": "Table",
     "section": "",
-    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-."
   },
   {
-    "objectID": "link.html#link",
-    "href": "link.html#link",
-    "title": "Cross reference",
-    "section": "Link",
-    "text": "Link\nOpen link in a new browser tab\n[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto\n\nSee Anchor-1\n\nCreate a link to another page by add the name of the qmd file of the target\n[Go to Julia Logo](figure.qmd#fig-julia_logo_local)\nGo to Julia Logo\nNotice this syntax does not work for cross page link\n@fig-julia_logo_local"
+    "objectID": "table.html#size-and-position",
+    "href": "table.html#size-and-position",
+    "title": "Table",
+    "section": "Size and position",
+    "text": "Size and position\n\nUse CSS grid to adjust the width and position the table.\nThe tbl-colwidths option adds up to 12.\n\nUse : to align each column.\n\n:::{.grid}\n:::{.g-col-2}\n:::\n:::{.g-col-8}\n| Case | Well | Production | Formation | Year |\n|:-----|:-----|-----------:|:---------:|-----:|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n: Well production {#tbl-well_1 tbl-colwidths=\"[1,1,1,2,1]\"}\n:::\n:::{.g-col-2}\n:::\n:::\n\n\n\n\n\n\n\nTable 2: Well production\n\n\n\n\n\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
+  },
+  {
+    "objectID": "table.html#cross-reference",
+    "href": "table.html#cross-reference",
+    "title": "Table",
+    "section": "Cross reference",
+    "text": "Cross reference\nReference to a table well production or Table 1"
   }
 ]

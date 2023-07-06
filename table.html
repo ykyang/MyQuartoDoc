@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.4.163">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -104,9 +138,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./table.html">Table</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./table.html">Table</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
     </div>
   </nav>
 </header>
@@ -118,8 +152,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./code_block.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code Block</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./css.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">CSS</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cross_reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross reference</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -130,14 +176,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./link.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cross reference</span></a>
+  <a href="./table.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Table</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./table.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Table</span></a>
+  <a href="./website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Website</span></a>
   </div>
 </li>
     </ul>
@@ -150,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#simple-table" id="toc-simple-table" class="nav-link active" data-scroll-target="#simple-table">Simple table</a></li>
+  <li><a href="#table-basic" id="toc-table-basic" class="nav-link active" data-scroll-target="#table-basic">Table basic</a></li>
   <li><a href="#size-and-position" id="toc-size-and-position" class="nav-link" data-scroll-target="#size-and-position">Size and position</a></li>
   <li><a href="#cross-reference" id="toc-cross-reference" class="nav-link" data-scroll-target="#cross-reference">Cross reference</a></li>
   </ul>
@@ -176,11 +222,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="simple-table" class="level2">
-<h2 class="anchored" data-anchor-id="simple-table">Simple table</h2>
-<ul>
-<li>Table without caption, reference or any configuration</li>
-</ul>
+<section id="table-basic" class="level2">
+<h2 class="anchored" data-anchor-id="table-basic">Table basic</h2>
+<p>A simple table</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>| Case | Well | Production | Formation | Year |</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>|------|------|------------|-----------|------|</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-1  | 20         |  WFMPA    | 5    |</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-2  | 22         |  WFMPA    | 5    |</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-3  | 28         |  WFMPB    | 5    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <table class="table">
 <thead>
 <tr class="header">
@@ -215,6 +264,52 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>Table with caption and number</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>| Case | Well | Production | Formation | Year |</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>|------|------|------------|-----------|------|</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-1  | 20         |  WFMPA    | 5    |</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-2  | 22         |  WFMPA    | 5    |</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-3  | 28         |  WFMPB    | 5    |</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>: Cumulative well production at 5-year {#tbl-well_2}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-well_2" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Cumulative well production at 5-year</caption>
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Well</th>
+<th>Production</th>
+<th>Formation</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>JJ-1</td>
+<td>H-1</td>
+<td>20</td>
+<td>WFMPA</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>JJ-1</td>
+<td>H-2</td>
+<td>22</td>
+<td>WFMPA</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>JJ-1</td>
+<td>H-3</td>
+<td>28</td>
+<td>WFMPB</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Label (<code>#tbl-well_2</code> above) is the unique identifier for table, and must starts with <code>tbl-</code>.</p>
 </section>
 <section id="size-and-position" class="level2">
 <h2 class="anchored" data-anchor-id="size-and-position">Size and position</h2>
@@ -222,8 +317,22 @@ ul.task-list li input[type="checkbox"] {
 <li>Use CSS grid to adjust the width and position the table.</li>
 <li>The <code>tbl-colwidths</code> option adds up to 12.<br>
 </li>
-<li>Use <code>:</code> to align.</li>
+<li>Use <code>:</code> to align each column.</li>
 </ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>:::{.grid}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>:::{.g-col-2}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>:::{.g-col-8}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>| Case | Well | Production | Formation | Year |</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>|:-----|:-----|-----------:|:---------:|-----:|</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-1  | 20         |  WFMPA    | 5    |</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-2  | 22         |  WFMPA    | 5    |</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>| JJ-1 | H-3  | 28         |  WFMPB    | 5    |</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>: Well production {#tbl-well_1 tbl-colwidths="<span class="co">[</span><span class="ot">1,1,1,2,1</span><span class="co">]</span>"}</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>:::{.g-col-2}</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="grid">
 <div class="g-col-2">
 
@@ -231,18 +340,18 @@ ul.task-list li input[type="checkbox"] {
 <div class="g-col-8">
 <div id="tbl-well_1" class="anchored">
 <table class="table">
-<caption>Table&nbsp;1: Well production</caption>
+<caption>Table&nbsp;2: Well production</caption>
 <colgroup>
 <col style="width: 1%">
 <col style="width: 1%">
+<col style="width: 1%">
 <col style="width: 2%">
-<col style="width: 4%">
 <col style="width: 1%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Case</th>
-<th>Well</th>
+<th style="text-align: left;">Case</th>
+<th style="text-align: left;">Well</th>
 <th style="text-align: right;">Production</th>
 <th style="text-align: center;">Formation</th>
 <th style="text-align: right;">Year</th>
@@ -250,22 +359,22 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>JJ-1</td>
-<td>H-1</td>
+<td style="text-align: left;">JJ-1</td>
+<td style="text-align: left;">H-1</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: center;">WFMPA</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
-<td>JJ-1</td>
-<td>H-2</td>
+<td style="text-align: left;">JJ-1</td>
+<td style="text-align: left;">H-2</td>
 <td style="text-align: right;">22</td>
 <td style="text-align: center;">WFMPA</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr class="odd">
-<td>JJ-1</td>
-<td>H-3</td>
+<td style="text-align: left;">JJ-1</td>
+<td style="text-align: left;">H-3</td>
 <td style="text-align: right;">28</td>
 <td style="text-align: center;">WFMPB</td>
 <td style="text-align: right;">5</td>
@@ -281,7 +390,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="cross-reference" class="level2">
 <h2 class="anchored" data-anchor-id="cross-reference">Cross reference</h2>
-<p>Reference to a table <a href="#tbl-well_1">well production</a> or <a href="#tbl-well_1" class="quarto-xref">Table&nbsp;1</a></p>
+<p>Reference to a table <a href="#tbl-well_2">well production</a> or <a href="#tbl-well_2" class="quarto-xref">Table&nbsp;1</a></p>
 
 
 </section>
