@@ -65,7 +65,17 @@ Figures in a grid
 Figures in a grid
 :::
 
+Put a figure in the margin area
 
+:::{.column-margin}
+![Julia logo](julia_logo.svg){#fig-x}
+:::
+
+```markdown
+:::{.column-margin}
+![Julia logo](julia_logo.svg){#fig-x}
+:::
+```
 
 ## Configuration
  

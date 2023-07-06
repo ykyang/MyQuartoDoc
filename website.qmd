@@ -6,6 +6,9 @@ Creat a new website project
 ```sh
 quarto create-project your-web-site-dir --type website
 ```
+
+Add `_site/` to `.gitignore` if necessary.
+
 Preview the website with
 ```sh
 cd your-web-site-dir
@@ -14,6 +17,23 @@ quarto preview
 The preview web server is slow.   Consider using Node.js
 ```sh
 npx http-server -p 3000 -o _site -a 127.0.0.1
+```
+
+Publish to `GitHub Pages`, see [GitHut Pages](https://quarto.org/docs/publishing/github-pages.html){target=_blank} for details.
+
+Create `gh-pages` branch (only necessary the first time)
+
+```bash
+git checkout --orphan gh-pages
+git reset --hard # make sure you've committed changes before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
+
+Check out the publishing branch, and
+
+```bash
+quarto publish gh-pages
 ```
 
 
