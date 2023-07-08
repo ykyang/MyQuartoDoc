@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.163">
+<meta name="generator" content="quarto-1.4.176">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -58,6 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -138,9 +139,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cross_reference.html">Cross reference</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cross_reference.html">Cross reference</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
@@ -223,26 +224,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="anchor" class="level2">
 <h2 class="anchored" data-anchor-id="anchor">Anchor</h2>
-<p>Anchor is created by</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Anchor-1</span><span class="co">]</span>{#anchor-1}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span id="anchor-1">Anchor-1</span></p>
-<p>Link to an anchor is</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">See Anchor-1</span><span class="co">](#anchor-1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="#anchor-1">See Anchor-1</a></p>
+<p>Create an anchor <span id="anchor-1">ANCHOR-1</span> with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">ANCHOR-1</span><span class="co">]</span>{#anchor-1}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="link" class="level2">
 <h2 class="anchored" data-anchor-id="link">Link</h2>
-<p>Open link in a new browser tab</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://github.com/quarto-dev/quarto-web/tree/main)</span>{target="_blank"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="https://github.com/quarto-dev/quarto-web/tree/main" target="_blank">Quarto</a></p>
+<p>Create link to</p>
 <ul>
-<li><a href="#anchor">See Anchor-1</a></li>
+<li>anchor: <a href="#anchor-1">Link to Anchor-1</a></li>
+<li>URL <a href="https://www.google.com" target="_blank">https://www.google.com</a>, or</li>
+<li>URL <a href="https://www.google.com" target="_blank">Google</a>,</li>
+<li>email <a href="mailto:fake@example.com" class="email">fake@example.com</a>,</li>
+<li>local file <a href="styles.css">styles</a>, or</li>
+<li>local file <a href="file:styles.css" class="uri">file:styles.css</a>,</li>
+<li>section <a href="#anchor">Anchor</a>,</li>
+<li>section in another <code>qmd</code> file, <a href="./figure.html#figure-basic">Figure basic</a>,</li>
+<li>figure in another <code>qmd</code> file, <a href="./figure.html#fig-julia_logo_local">Go to Julia Logo</a>.</li>
 </ul>
-<p>Create a link to another page by add the name of the <code>qmd file</code> of the target</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Go to Julia Logo</span><span class="co">](figure.qmd#fig-julia_logo_local)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="./figure.html#fig-julia_logo_local">Go to Julia Logo</a></p>
-<p>Notice this syntax does not work for cross page link</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>@fig-julia_logo_local</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>anchor: <span class="co">[</span><span class="ot">Link to Anchor-1</span><span class="co">](#anchor-1)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>URL <span class="ot">&lt;https://www.google.com&gt;</span>{target="_blank"}, or</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>URL <span class="co">[</span><span class="ot">Google</span><span class="co">](https://www.google.com)</span>{target="_blank"},</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>email <span class="ot">&lt;fake@example.com&gt;</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>local file <span class="co">[</span><span class="ot">styles</span><span class="co">](styles.css)</span>, or</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>local file <span class="kw">&lt;file:styles.css&gt;</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>section <span class="co">[</span><span class="ot">Anchor</span><span class="co">](#anchor)</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>section in another <span class="in">`qmd`</span> file, <span class="co">[</span><span class="ot">Figure basic</span><span class="co">](figure.qmd#figure-basic)</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>figure in another <span class="in">`qmd`</span> file, <span class="co">[</span><span class="ot">Go to Julia Logo</span><span class="co">](figure.qmd#fig-julia_logo_local)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Open link in a new browser tab with <code>{target="_blank"}</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Quarto Web</span><span class="co">](https://github.com/quarto-dev/quarto-web/tree/main)</span>{target="_blank"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://github.com/quarto-dev/quarto-web/tree/main" target="_blank">Quarto Web</a></p>
 
 
 </section>

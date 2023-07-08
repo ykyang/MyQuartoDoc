@@ -53,21 +53,21 @@
     "href": "cross_reference.html",
     "title": "Cross reference",
     "section": "",
-    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
   },
   {
     "objectID": "cross_reference.html#anchor",
     "href": "cross_reference.html#anchor",
     "title": "Cross reference",
     "section": "",
-    "text": "Anchor is created by\n[Anchor-1]{#anchor-1}\nAnchor-1\nLink to an anchor is\n[See Anchor-1](#anchor-1)\nSee Anchor-1"
+    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
   },
   {
     "objectID": "cross_reference.html#link",
     "href": "cross_reference.html#link",
     "title": "Cross reference",
     "section": "Link",
-    "text": "Link\nOpen link in a new browser tab\n[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto\n\nSee Anchor-1\n\nCreate a link to another page by add the name of the qmd file of the target\n[Go to Julia Logo](figure.qmd#fig-julia_logo_local)\nGo to Julia Logo\nNotice this syntax does not work for cross page link\n@fig-julia_logo_local"
+    "text": "Link\nCreate link to\n\nanchor: Link to Anchor-1\nURL https://www.google.com, or\nURL Google,\nemail fake@example.com,\nlocal file styles, or\nlocal file file:styles.css,\nsection Anchor,\nsection in another qmd file, Figure basic,\nfigure in another qmd file, Go to Julia Logo.\n\n* anchor: [Link to Anchor-1](#anchor-1)\n* URL &lt;https://www.google.com&gt;{target=\"_blank\"}, or\n* URL [Google](https://www.google.com){target=\"_blank\"},\n* email &lt;fake@example.com&gt;,\n* local file [styles](styles.css), or\n* local file &lt;file:styles.css&gt;,\n* section [Anchor](#anchor),\n* section in another `qmd` file, [Figure basic](figure.qmd#figure-basic),\n* figure in another `qmd` file, [Go to Julia Logo](figure.qmd#fig-julia_logo_local).\nOpen link in a new browser tab with {target=\"_blank\"}.\n[Quarto Web](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto Web"
   },
   {
     "objectID": "figure.html",
