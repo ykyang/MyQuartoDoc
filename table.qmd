@@ -38,10 +38,23 @@ Table with caption and number
 | JJ-1 | H-2  | 22         |  WFMPA    | 5    |
 | JJ-1 | H-3  | 28         |  WFMPB    | 5    |
 
-: Cumulative well production at 5-year {#tbl-well_2}
+: Cumulative well production at 5-year {#tbl-well_3}
 
 Label (`#tbl-well_2` above) is the unique identifier for table, and must starts
 with `tbl-`.
+
+Change font size of a table.  Notice the caption font is not affected.
+[Source](https://github.com/quarto-dev/quarto-cli/discussions/3696)
+
+::: {style="font-size: 70%;"}
+| Case | Well | Production | Formation | Year |
+|------|------|------------|-----------|------|
+| JJ-1 | H-1  | 20         |  WFMPA    | 5    |
+| JJ-1 | H-2  | 22         |  WFMPA    | 5    |
+| JJ-1 | H-3  | 28         |  WFMPB    | 5    |
+
+: Cumulative well production at 5-year {#tbl-well_4}
+:::
 
 ## Size and position
 * Use CSS grid to adjust the width and position the table.
