@@ -4,7 +4,7 @@ project:
 website:
   title: "MyQuartoDoc"
   navbar:
-    pinned: true
+    pinned: false
     left:
       - href: index.qmd
         text: Home

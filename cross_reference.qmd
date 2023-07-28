@@ -4,42 +4,41 @@ title: Cross reference
 
 ## Anchor
 
-Anchor is created by
+Create an anchor [ANCHOR-1]{#anchor-1} with
 
 ```markdown
-[Anchor-1]{#anchor-1}
+[ANCHOR-1]{#anchor-1}
 ```  
-[Anchor-1]{#anchor-1}
-
-Link to an anchor is
-```markdown
-[See Anchor-1](#anchor-1)
-```
-[See Anchor-1](#anchor-1)
-
-
 
 ## Link
+Create link to 
 
-Open link in a new browser tab
-
-```markdown
-[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target="_blank"}
-```
-
-[Quarto](https://github.com/quarto-dev/quarto-web/tree/main){target="_blank"}
-
-* [See Anchor-1](#anchor)
-
-Create a link to another page by add the name of the `qmd file` of the target
-```markdown
-[Go to Julia Logo](figure.qmd#fig-julia_logo_local)
-```
-
-[Go to Julia Logo](figure.qmd#fig-julia_logo_local)
-
-Notice this syntax does not work for cross page link
+* anchor: [Link to Anchor-1](#anchor-1)
+* URL <https://www.google.com>{target="_blank"}, or
+* URL [Google](https://www.google.com){target="_blank"},
+* email <fake@example.com>,
+* local file [styles](styles.css), or
+* local file <file:styles.css>,
+* section [Anchor](#anchor),
+* section in another `qmd` file, [Figure basic](figure.qmd#figure-basic),
+* figure in another `qmd` file, [Go to Julia Logo](figure.qmd#fig-julia_logo_local).
 
 ```markdown
-@fig-julia_logo_local
+* anchor: [Link to Anchor-1](#anchor-1)
+* URL <https://www.google.com>{target="_blank"}, or
+* URL [Google](https://www.google.com){target="_blank"},
+* email <fake@example.com>,
+* local file [styles](styles.css), or
+* local file <file:styles.css>,
+* section [Anchor](#anchor),
+* section in another `qmd` file, [Figure basic](figure.qmd#figure-basic),
+* figure in another `qmd` file, [Go to Julia Logo](figure.qmd#fig-julia_logo_local).
 ```
+
+Open link in a new browser tab with `{target="_blank"}`.
+
+```markdown
+[Quarto Web](https://github.com/quarto-dev/quarto-web/tree/main){target="_blank"}
+```
+
+[Quarto Web](https://github.com/quarto-dev/quarto-web/tree/main){target="_blank"}

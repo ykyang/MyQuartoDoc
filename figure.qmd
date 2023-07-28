@@ -2,7 +2,7 @@
 title: Figure
 ---
 
-## Figure basic
+## Figure Basic
 
 Include figure with this syntax
 ```markdown
