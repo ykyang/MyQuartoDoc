@@ -4,7 +4,7 @@
     "href": "website.html",
     "title": "Website",
     "section": "",
-    "text": "Creat a new website project\nquarto create-project your-web-site-dir --type website\nAdd _site/ to .gitignore if necessary.\nPreview the website with\ncd your-web-site-dir\nquarto preview\nThe preview web server is slow. Consider using Node.js\nnpx http-server -p 3000 -o _site -a 127.0.0.1\nPublish to GitHub Pages, see GitHut Pages for details.\nCreate gh-pages branch (only necessary the first time)\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\nCheck out the publishing branch, and\nquarto publish gh-pages\nSee Quarto for more details."
+    "text": "Creat a new website project\nquarto create-project your-web-site-dir --type website\nAdd _site/ to .gitignore if necessary.\nPreview the website with\ncd your-web-site-dir\nquarto preview\nThe preview web server is slow. Consider using Node.js\nnpx http-server -p 3000 -o _site -a 127.0.0.1\nPublish to GitHub Pages, see GitHut Pages for details.\nCreate gh-pages branch (only necessary the first time)\ngit checkout --orphan gh-pages\ngit reset --hard # make sure you've committed changes before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\nCheck out the publishing branch (not on the gh-pages branch), and\nquarto publish gh-pages\nSee Quarto for more details."
   },
   {
     "objectID": "index.html",
@@ -91,6 +91,13 @@
     "text": "Multiple figures\n::: {#fig-julia_logo_2x2 layout-ncol=2}\n\n![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}\n\n![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}\n\n![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}\n\n![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}\n\nFigures in a grid\n:::\n\n\n\n\n\n\n\n(a) Julia-(1,1)\n\n\n\n\n\n\n\n(b) Julia-(1,2)\n\n\n\n\n\n\n\n\n\n(c) Julia-(2,1)\n\n\n\n\n\n\n\n(d) Julia-(2,2)\n\n\n\n\nFigure 3: Figures in a grid\n\n\nPut a figure in the margin area\n\n\n\n\n\nFigure 4: Julia logo\n\n\n:::{.column-margin}\n![Julia logo](julia_logo.svg){#fig-x}\n:::"
   },
   {
+    "objectID": "figure.html#custom-layout",
+    "href": "figure.html#custom-layout",
+    "title": "Figure",
+    "section": "Custom layout",
+    "text": "Custom layout\nSee Custom Layout\n\n\n\n \n\n\n\n\n\nFigure 5: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 6: Julia logo\n\n\n\n\n\n\n\nFigure 7: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 8: Julia logo\n\n\n\n\n\n\n\nFigure 9: Julia logo\n\n\n\n\n\n\n\nFigure 10: Julia logo"
+  },
+  {
     "objectID": "figure.html#configuration",
     "href": "figure.html#configuration",
     "title": "Figure",
@@ -109,27 +116,27 @@
     "href": "table.html",
     "title": "Table",
     "section": "",
-    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-."
+    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-.\nChange font size of a table. Notice the caption font is not affected. Source\n\n\n\nTable 2: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
   },
   {
     "objectID": "table.html#table-basic",
     "href": "table.html#table-basic",
     "title": "Table",
     "section": "",
-    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-."
+    "text": "A simple table\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\nTable with caption and number\n| Case | Well | Production | Formation | Year |\n|------|------|------------|-----------|------|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n\n: Cumulative well production at 5-year {#tbl-well_2}\n\n\nTable 1: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5\n\n\n\n\nLabel (#tbl-well_2 above) is the unique identifier for table, and must starts with tbl-.\nChange font size of a table. Notice the caption font is not affected. Source\n\n\n\nTable 2: Cumulative well production at 5-year\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
   },
   {
     "objectID": "table.html#size-and-position",
     "href": "table.html#size-and-position",
     "title": "Table",
     "section": "Size and position",
-    "text": "Size and position\n\nUse CSS grid to adjust the width and position the table.\nThe tbl-colwidths option adds up to 12.\n\nUse : to align each column.\n\n:::{.grid}\n:::{.g-col-2}\n:::\n:::{.g-col-8}\n| Case | Well | Production | Formation | Year |\n|:-----|:-----|-----------:|:---------:|-----:|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n: Well production {#tbl-well_1 tbl-colwidths=\"[1,1,1,2,1]\"}\n:::\n:::{.g-col-2}\n:::\n:::\n\n\n\n\n\n\n\nTable 2: Well production\n\n\n\n\n\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
+    "text": "Size and position\n\nUse CSS grid to adjust the width and position the table.\nThe tbl-colwidths option adds up to 12.\n\nUse : to align each column.\n\n:::{.grid}\n:::{.g-col-2}\n:::\n:::{.g-col-8}\n| Case | Well | Production | Formation | Year |\n|:-----|:-----|-----------:|:---------:|-----:|\n| JJ-1 | H-1  | 20         |  WFMPA    | 5    |\n| JJ-1 | H-2  | 22         |  WFMPA    | 5    |\n| JJ-1 | H-3  | 28         |  WFMPB    | 5    |\n: Well production {#tbl-well_1 tbl-colwidths=\"[1,1,1,2,1]\"}\n:::\n:::{.g-col-2}\n:::\n:::\n\n\n\n\n\n\n\nTable 3: Well production\n\n\n\n\n\n\n\n\n\nCase\nWell\nProduction\nFormation\nYear\n\n\n\n\nJJ-1\nH-1\n20\nWFMPA\n5\n\n\nJJ-1\nH-2\n22\nWFMPA\n5\n\n\nJJ-1\nH-3\n28\nWFMPB\n5"
   },
   {
     "objectID": "table.html#cross-reference",
     "href": "table.html#cross-reference",
     "title": "Table",
     "section": "Cross reference",
-    "text": "Cross reference\nReference to a table well production or Table 1"
+    "text": "Cross reference\nReference to a table well production.\n[well production](#tbl-well_2)"
   }
 ]

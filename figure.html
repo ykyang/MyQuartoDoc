@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.176">
+<meta name="generator" content="quarto-1.4.163">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -139,9 +139,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./figure.html">Figure</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./figure.html">Figure</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
     </div>
   </nav>
 </header>
@@ -199,6 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#figure-basic" id="toc-figure-basic" class="nav-link active" data-scroll-target="#figure-basic">Figure Basic</a></li>
   <li><a href="#multiple-figures" id="toc-multiple-figures" class="nav-link" data-scroll-target="#multiple-figures">Multiple figures</a></li>
+  <li><a href="#custom-layout" id="toc-custom-layout" class="nav-link" data-scroll-target="#custom-layout">Custom layout</a></li>
   <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
   <li><a href="#cross-reference" id="toc-cross-reference" class="nav-link" data-scroll-target="#cross-reference">Cross reference</a></li>
   </ul>
@@ -321,6 +322,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div></div><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>:::{.column-margin}</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="al">![Julia logo](julia_logo.svg)</span>{#fig-x}</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="custom-layout" class="level2">
+<h2 class="anchored" data-anchor-id="custom-layout">Custom layout</h2>
+<p><a href="https://quarto.org/docs/authoring/figures.html#custom-layout">See Custom Layout</a></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 16.3%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.7%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.7%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;7: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 16.3%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;8: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;9: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-x" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="julia_logo.svg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;10: Julia logo</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="configuration" class="level2">
 <h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
