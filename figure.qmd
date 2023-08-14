@@ -77,6 +77,24 @@ Put a figure in the margin area
 :::
 ```
 
+## Custom layout
+[See Custom Layout](https://quarto.org/docs/authoring/figures.html#custom-layout)
+
+::: {layout="[[-25,25,-25], [-0.16,0.33,0.33,-0.16],[1,1,1]]"}
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+:::
+
+
 ## Configuration
  
 ```{#lst-x .yaml lst-cap="Move figure caption to the top in `_quarto.yml`"}

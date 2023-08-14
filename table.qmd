@@ -96,6 +96,10 @@ Change font size of a table.  Notice the caption font is not affected.
 
 
 ## Cross reference
-Reference to a table [well production](#tbl-well_2) or @tbl-well_2
+Reference to a table [well production](#tbl-well_2).
+
+```markdown
+[well production](#tbl-well_2)
+```
 
 

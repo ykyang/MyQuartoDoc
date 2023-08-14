@@ -30,7 +30,7 @@ git commit --allow-empty -m "Initialising gh-pages branch"
 git push origin gh-pages
 ```
 
-Check out the publishing branch, and
+Check out the publishing branch (not on the gh-pages branch), and
 
 ```bash
 quarto publish gh-pages
