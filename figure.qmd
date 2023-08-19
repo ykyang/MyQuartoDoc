@@ -94,6 +94,25 @@ Put a figure in the margin area
 ![Julia logo](julia_logo.svg){#fig-x width=20%}
 :::
 
+Collapse image layout
+
+::: {.callout-note collapse="true" title="Production plot" appearance="minimal"}
+::::{layout="[[-25,25,-25], [-0.16,0.33,0.33,-0.16],[1,1,1]]"}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+
+![Julia logo](julia_logo.svg){#fig-x width=20%}
+::::
+:::
+
 
 ## Configuration
  
@@ -113,3 +132,4 @@ cross reference to figures.
 ```
 
 [Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local
+
