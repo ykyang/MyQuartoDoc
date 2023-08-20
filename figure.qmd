@@ -94,9 +94,7 @@ Put a figure in the margin area
 ![Julia logo](julia_logo.svg){#fig-x width=20%}
 :::
 
-Collapse image layout
-
-::: {.callout-note collapse="true" title="Production plot" appearance="minimal"}
+::: {.callout-note collapse="true" title="Collapse of image layout" appearance="minimal"}
 ::::{layout="[[-25,25,-25], [-0.16,0.33,0.33,-0.16],[1,1,1]]"}
 
 ![Julia logo](julia_logo.svg){#fig-x width=20%}
@@ -113,6 +111,97 @@ Collapse image layout
 ::::
 :::
 
+::: {.callout-warning collapse="true" title="Incomplete VSCode outline"}
+Key words,
+
+* VSCode, Codium, Quarto, Markdown
+* outline, incomplete, error, missing, bug
+
+When using many custom blocks (more than 15) in the same `qmd` file, such as
+
+```markdown
+::: {.callout-note}
+Note
+:::
+```
+
+The outline functionality in `VSCode` may not work properly.  A dirty work around
+is to add
+
+```markdown
+:::
+:::
+```
+
+to separate each custom blocks to reset.  For example,
+
+```markdown
+::: {.callout-note}
+Note
+:::
+
+:::
+:::
+
+::: {.callout-note}
+Note
+:::
+```
+
+In this way, outline of all sections will show up properly.
+Unfortunately, `::: :::` will show up in the final documentation.
+The decision to add `::: :::` or not is then between the importance of easy navigation in the `qmd` file vs. clean reading in the final document.
+:::
+
+::: {.callout-tip collapse="true" title="Remove ::: ::: before rendering"}
+It is possible to pre-process the `qmd` file to remove `::: :::` before rendering.
+In this way, one can navigate through the outline, and not having `::: :::` in
+the final document.
+
+An example of such implementation in Julia is shown below.
+
+````julia
+"""
+    remove_before_render(src::IO, out::IO; shift=true)
+
+Remove the following from `qmd` files.
+```default
+:::
+REMOVE BEFORE RENDER
+:::
+```
+
+If `shift=false`, three empty lines replace the above three lines.
+"""
+function remove_before_render(src::IO, out::IO; shift=true)
+    for line in eachline(src)
+        if line == ":::"
+            line2 = readline(src)
+            if line2 == "REMOVE BEFORE RENDER"
+                readline(src) # read and ignore 3rd line
+                if !shift
+                    println(out)
+                    println(out)
+                    println(out)
+                end
+                continue
+            else
+                println(out, line)
+                println(out, line2)
+                continue
+            end
+        end
+      
+        println(out, line)
+    end
+end
+````
+
+Notice that it is necessary to work on the file with `::: :::`,
+and include the processed file in the `_quarto.yml` file.  For example, work
+on `figure.qml` and name the processed file `figure_proc.qml`.
+Include `figure_proc.qml` in `_quarto.ym` for rendering.
+:::
 
 ## Configuration
  
