@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ykyang.github.io/MyQuartoDoc/website.html</loc>
-    <lastmod>2023-08-14T13:09:20.835Z</lastmod>
+    <lastmod>2023-08-19T13:58:08.566Z</lastmod>
   </url>
   <url>
     <loc>https://ykyang.github.io/MyQuartoDoc/index.html</loc>
-    <lastmod>2023-06-30T16:55:11.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ykyang.github.io/MyQuartoDoc/css.html</loc>
-    <lastmod>2023-07-06T16:05:58.970Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ykyang.github.io/MyQuartoDoc/code_block.html</loc>
-    <lastmod>2023-07-06T16:05:58.969Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ykyang.github.io/MyQuartoDoc/about.html</loc>
-    <lastmod>2023-06-30T16:55:11.888Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ykyang.github.io/MyQuartoDoc/cross_reference.html</loc>
-    <lastmod>2023-07-28T22:43:05.800Z</lastmod>
+    <lastmod>2023-06-30T20:01:46.847Z</lastmod>
   </url>
   <url>
     <loc>https://ykyang.github.io/MyQuartoDoc/figure.html</loc>
-    <lastmod>2023-08-14T14:03:58.508Z</lastmod>
+    <lastmod>2023-08-20T21:32:43.974Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ykyang.github.io/MyQuartoDoc/cross_reference.html</loc>
+    <lastmod>2023-07-08T20:45:01.958Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ykyang.github.io/MyQuartoDoc/about.html</loc>
+    <lastmod>2023-06-30T20:01:46.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ykyang.github.io/MyQuartoDoc/code_block.html</loc>
+    <lastmod>2023-07-04T16:05:44.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ykyang.github.io/MyQuartoDoc/css.html</loc>
+    <lastmod>2023-06-30T21:59:56.205Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ykyang.github.io/MyQuartoDoc/figure_proc.html</loc>
+    <lastmod>2023-08-20T20:26:33.865Z</lastmod>
   </url>
   <url>
     <loc>https://ykyang.github.io/MyQuartoDoc/table.html</loc>
-    <lastmod>2023-08-14T13:53:04.526Z</lastmod>
+    <lastmod>2023-08-19T21:23:37.250Z</lastmod>
   </url>
 </urlset>

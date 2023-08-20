@@ -14,62 +14,6 @@
     "text": "This is a Quarto website to collect commonly used features to write technical report."
   },
   {
-    "objectID": "css.html",
-    "href": "css.html",
-    "title": "CSS",
-    "section": "",
-    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
-  },
-  {
-    "objectID": "css.html#quarto-website",
-    "href": "css.html#quarto-website",
-    "title": "CSS",
-    "section": "",
-    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
-  },
-  {
-    "objectID": "code_block.html",
-    "href": "code_block.html",
-    "title": "Code Block",
-    "section": "",
-    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
-  },
-  {
-    "objectID": "code_block.html#code-block-basic",
-    "href": "code_block.html#code-block-basic",
-    "title": "Code Block",
-    "section": "",
-    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "cross_reference.html",
-    "href": "cross_reference.html",
-    "title": "Cross reference",
-    "section": "",
-    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
-  },
-  {
-    "objectID": "cross_reference.html#anchor",
-    "href": "cross_reference.html#anchor",
-    "title": "Cross reference",
-    "section": "",
-    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
-  },
-  {
-    "objectID": "cross_reference.html#link",
-    "href": "cross_reference.html#link",
-    "title": "Cross reference",
-    "section": "Link",
-    "text": "Link\nCreate link to\n\nanchor: Link to Anchor-1\nURL https://www.google.com, or\nURL Google,\nemail fake@example.com,\nlocal file styles, or\nlocal file file:styles.css,\nsection Anchor,\nsection in another qmd file, Figure basic,\nfigure in another qmd file, Go to Julia Logo.\n\n* anchor: [Link to Anchor-1](#anchor-1)\n* URL &lt;https://www.google.com&gt;{target=\"_blank\"}, or\n* URL [Google](https://www.google.com){target=\"_blank\"},\n* email &lt;fake@example.com&gt;,\n* local file [styles](styles.css), or\n* local file &lt;file:styles.css&gt;,\n* section [Anchor](#anchor),\n* section in another `qmd` file, [Figure basic](figure.qmd#figure-basic),\n* figure in another `qmd` file, [Go to Julia Logo](figure.qmd#fig-julia_logo_local).\nOpen link in a new browser tab with {target=\"_blank\"}.\n[Quarto Web](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto Web"
-  },
-  {
     "objectID": "figure.html",
     "href": "figure.html",
     "title": "Figure",
@@ -95,7 +39,7 @@
     "href": "figure.html#custom-layout",
     "title": "Figure",
     "section": "Custom layout",
-    "text": "Custom layout\nSee Custom Layout\n\n\n\n \n\n\n\n\n\nFigure 5: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 6: Julia logo\n\n\n\n\n\n\n\nFigure 7: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 8: Julia logo\n\n\n\n\n\n\n\nFigure 9: Julia logo\n\n\n\n\n\n\n\nFigure 10: Julia logo"
+    "text": "Custom layout\nSee Custom Layout\n\n\n\n \n\n\n\n\n\nFigure 5: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 6: Julia logo\n\n\n\n\n\n\n\nFigure 7: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 8: Julia logo\n\n\n\n\n\n\n\nFigure 9: Julia logo\n\n\n\n\n\n\n\nFigure 10: Julia logo\n\n\n\n\n\n\n\n\n\n\n\nCollapse of image layout\n\n\n\n\n\n\n\n\n \n\n\n\n\n\nFigure 11: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 12: Julia logo\n\n\n\n\n\n\n\nFigure 13: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 14: Julia logo\n\n\n\n\n\n\n\nFigure 15: Julia logo\n\n\n\n\n\n\n\nFigure 16: Julia logo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIncomplete VSCode outline\n\n\n\n\n\nKey words,\n\nVSCode, Codium, Quarto, Markdown\noutline, incomplete, error, missing, bug\n\nWhen using many custom blocks (more than 15) in the same qmd file, such as\n::: {.callout-note}\nNote\n:::\nThe outline functionality in VSCode may not work properly. A dirty work around is to add\n:::\n:::\nto separate each custom blocks to reset. For example,\n::: {.callout-note}\nNote\n:::\n\n:::\n:::\n\n::: {.callout-note}\nNote\n:::\nIn this way, outline of all sections will show up properly. Unfortunately, ::: ::: will show up in the final documentation. The decision to add ::: ::: or not is then between the importance of easy navigation in the qmd file vs. clean reading in the final document.\n\n\n\n\n\n\n\n\n\nRemove ::: ::: before rendering\n\n\n\n\n\nIt is possible to pre-process the qmd file to remove ::: ::: before rendering. In this way, one can navigate through the outline, and not having ::: ::: in the final document.\nAn example of such implementation in Julia is shown below.\n\"\"\"\n    remove_before_render(src::IO, out::IO; shift=true)\n\nRemove the following from `qmd` files.\n```default\n:::\nREMOVE BEFORE RENDER\n:::\n```\n\nIf `shift=false`, three empty lines replace the above three lines.\n\"\"\"\nfunction remove_before_render(src::IO, out::IO; shift=true)\n    for line in eachline(src)\n        if line == \":::\"\n            line2 = readline(src)\n            if line2 == \"REMOVE BEFORE RENDER\"\n                readline(src) # read and ignore 3rd line\n                if !shift\n                    println(out)\n                    println(out)\n                    println(out)\n                end\n                continue\n            else\n                println(out, line)\n                println(out, line2)\n                continue\n            end\n        end\n      \n        println(out, line)\n    end\nend\nNotice that it is necessary to work on the file with ::: :::, and include the processed file in the _quarto.yml file. For example, work on figure.qml and name the processed file figure_proc.qml. Include figure_proc.qml in _quarto.ym for rendering."
   },
   {
     "objectID": "figure.html#configuration",
@@ -107,6 +51,104 @@
   {
     "objectID": "figure.html#cross-reference",
     "href": "figure.html#cross-reference",
+    "title": "Figure",
+    "section": "Cross reference",
+    "text": "Cross reference\nThis section is purposely placed at the end, in order to see the effect of cross reference to figures.\n[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local\nGo to Julia Logo or Figure 1"
+  },
+  {
+    "objectID": "cross_reference.html",
+    "href": "cross_reference.html",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
+  },
+  {
+    "objectID": "cross_reference.html#anchor",
+    "href": "cross_reference.html#anchor",
+    "title": "Cross reference",
+    "section": "",
+    "text": "Create an anchor ANCHOR-1 with\n[ANCHOR-1]{#anchor-1}"
+  },
+  {
+    "objectID": "cross_reference.html#link",
+    "href": "cross_reference.html#link",
+    "title": "Cross reference",
+    "section": "Link",
+    "text": "Link\nCreate link to\n\nanchor: Link to Anchor-1\nURL https://www.google.com, or\nURL Google,\nemail fake@example.com,\nlocal file styles, or\nlocal file file:styles.css,\nsection Anchor,\nsection in another qmd file, Figure basic,\nfigure in another qmd file, Go to Julia Logo.\n\n* anchor: [Link to Anchor-1](#anchor-1)\n* URL &lt;https://www.google.com&gt;{target=\"_blank\"}, or\n* URL [Google](https://www.google.com){target=\"_blank\"},\n* email &lt;fake@example.com&gt;,\n* local file [styles](styles.css), or\n* local file &lt;file:styles.css&gt;,\n* section [Anchor](#anchor),\n* section in another `qmd` file, [Figure basic](figure.qmd#figure-basic),\n* figure in another `qmd` file, [Go to Julia Logo](figure.qmd#fig-julia_logo_local).\nOpen link in a new browser tab with {target=\"_blank\"}.\n[Quarto Web](https://github.com/quarto-dev/quarto-web/tree/main){target=\"_blank\"}\nQuarto Web"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "code_block.html",
+    "href": "code_block.html",
+    "title": "Code Block",
+    "section": "",
+    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
+  },
+  {
+    "objectID": "code_block.html#code-block-basic",
+    "href": "code_block.html#code-block-basic",
+    "title": "Code Block",
+    "section": "",
+    "text": "Include code block with this syntax\n``` {#lst-your_unique_label .language lst-cap=\"Your caption\"}\nYour code here\n```\nLabel must start with #lst-.\nJavascript example\n\nListing 1: Menu items with rest and spread\nfunction MenuItem({ label, href, ...rest }) {\n  return (\n    &lt;li className=\"menu-item\"&gt;\n      &lt;a className=\"menu-link\" href={href} {...rest}&gt;\n        {label}\n      &lt;/a&gt;\n    &lt;/li&gt;\n  );\n}\n\nUse default if the language is not supported\nNot supported language\nNot supported language\nNot supported language\nGet a full list of supported languages\nquarto pandoc --list-highlight-languages\nExample configuration\nformat:\n  html:\n    # https://quarto.org/docs/output-formats/html-code.html#code-filename\n    code-block-bg: true\n    highlight-style: pygments\n    code-block-border-left: false\n    highlight-style: pygments"
+  },
+  {
+    "objectID": "css.html",
+    "href": "css.html",
+    "title": "CSS",
+    "section": "",
+    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
+  },
+  {
+    "objectID": "css.html#quarto-website",
+    "href": "css.html#quarto-website",
+    "title": "CSS",
+    "section": "",
+    "text": "Copy\n\nstyle.css\ntheme.scss\n\nfrom Quarto to project directory, and add the following to _quarto.yml.\nformat:\n  html:\n    theme:\n      light: [cosmo, theme.scss]\n    css: styles.css"
+  },
+  {
+    "objectID": "figure_proc.html",
+    "href": "figure_proc.html",
+    "title": "Figure",
+    "section": "",
+    "text": "Include figure with this syntax\n![caption](location){label configuration}\nFor example\n![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}\n\n\n\nFigure 1: Julia Logo from local file\n\n\nFigure label is the unique identifier for figure, and must starts with fig-.\nInclude a video\n::: {#fig-elephant}\n&lt;p align=\"center\"&gt;\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SNggmeilXDQ\"&gt;&lt;/iframe&gt;\n&lt;/p&gt;\nElephant\n:::\n\n\n\n\n\n\nFigure 2: Elephant"
+  },
+  {
+    "objectID": "figure_proc.html#figure-basic",
+    "href": "figure_proc.html#figure-basic",
+    "title": "Figure",
+    "section": "",
+    "text": "Include figure with this syntax\n![caption](location){label configuration}\nFor example\n![Julia Logo from local file](julia_logo.svg){#fig-julia_logo_local width=20%}\n\n\n\nFigure 1: Julia Logo from local file\n\n\nFigure label is the unique identifier for figure, and must starts with fig-.\nInclude a video\n::: {#fig-elephant}\n&lt;p align=\"center\"&gt;\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SNggmeilXDQ\"&gt;&lt;/iframe&gt;\n&lt;/p&gt;\nElephant\n:::\n\n\n\n\n\n\nFigure 2: Elephant"
+  },
+  {
+    "objectID": "figure_proc.html#multiple-figures",
+    "href": "figure_proc.html#multiple-figures",
+    "title": "Figure",
+    "section": "Multiple figures",
+    "text": "Multiple figures\n::: {#fig-julia_logo_2x2 layout-ncol=2}\n\n![Julia-(1,1)](julia_logo.svg){#fig-julia_logo_11 width=200px}\n\n![Julia-(1,2)](julia_logo.svg){#fig-julia_logo_12 width=300px}\n\n![Julia-(2,1)](julia_logo.svg){#fig-julia_logo_21 width=300px}\n\n![Julia-(2,2)](julia_logo.svg){#fig-julia_logo_22 width=200px}\n\nFigures in a grid\n:::\n\n\n\n\n\n\n\n(a) Julia-(1,1)\n\n\n\n\n\n\n\n(b) Julia-(1,2)\n\n\n\n\n\n\n\n\n\n(c) Julia-(2,1)\n\n\n\n\n\n\n\n(d) Julia-(2,2)\n\n\n\n\nFigure 3: Figures in a grid\n\n\nPut a figure in the margin area\n\n\n\n\n\nFigure 4: Julia logo\n\n\n:::{.column-margin}\n![Julia logo](julia_logo.svg){#fig-x}\n:::\n::: REMOVE BEFORE RENDER :::"
+  },
+  {
+    "objectID": "figure_proc.html#custom-layout",
+    "href": "figure_proc.html#custom-layout",
+    "title": "Figure",
+    "section": "Custom layout",
+    "text": "Custom layout\nSee Custom Layout\n\n\n\n \n\n\n\n\n\nFigure 5: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 6: Julia logo\n\n\n\n\n\n\n\nFigure 7: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 8: Julia logo\n\n\n\n\n\n\n\nFigure 9: Julia logo\n\n\n\n\n\n\n\nFigure 10: Julia logo\n\n\n\n\n\nCollapse image layout\n\n\n\n\n\n\nCollapse\n\n\n\n\n\n\n\n\n \n\n\n\n\n\nFigure 11: Julia logo\n\n\n\n\n \n\n\n\n\n \n\n\n\n\n\nFigure 12: Julia logo\n\n\n\n\n\n\n\nFigure 13: Julia logo\n\n\n\n\n \n\n\n\n\n\n\n\nFigure 14: Julia logo\n\n\n\n\n\n\n\nFigure 15: Julia logo\n\n\n\n\n\n\n\nFigure 16: Julia logo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIncomplete VSCode outline\n\n\n\n\n\nWhen using many custom blocks (more than 15) in the same qmd file, such as\n::: {.callout-note}\nNote\n:::\nThe outline functionality in VSCode may not work properly. A dirty work around is to add\n:::\n:::\nto separate each custom blocks to reset. For example,\n::: {.callout-note}\nNote\n:::\n\n:::\n:::\n\n::: {.callout-note}\nNote\n:::\nUnfortunately, ::: ::: will show up in the final documentation. The decision to add ::: ::: or not is then between the importance of easy navigation in the qmd file vs. clean reading in the final document.\nIt is possible to pre-process the qmd file to remove ::: ::: before rendering. In this way, one can navigate through the outline, and not having ::: ::: in the final document."
+  },
+  {
+    "objectID": "figure_proc.html#configuration",
+    "href": "figure_proc.html#configuration",
+    "title": "Figure",
+    "section": "Configuration",
+    "text": "Configuration\n\nListing 1: Move figure caption to the top in _quarto.yml\nformat:\n  html:\n    fig-cap-location: top"
+  },
+  {
+    "objectID": "figure_proc.html#cross-reference",
+    "href": "figure_proc.html#cross-reference",
     "title": "Figure",
     "section": "Cross reference",
     "text": "Cross reference\nThis section is purposely placed at the end, in order to see the effect of cross reference to figures.\n[Go to Julia Logo](#fig-julia_logo_local) or @fig-julia_logo_local\nGo to Julia Logo or Figure 1"
